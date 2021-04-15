@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv='cache-control' content='no-cache'>
+<meta http-equiv='expires' content='0'>
+<meta http-equiv='pragma' content='no-cache'>
+  <title>Please Sign In</title>
+  <link rel="stylesheet" type="text/css" title="login stylesheet" href="../res/login.css"></link>
+  <script data-main="/osf project/kiosk program/src/main.js" src="/osf project/kiosk program/src/lib/requirejs.js"></script>
+  <script src="/osf project/kiosk program/src/encoder.js"></script>
+  <script src="/osf project/kiosk program/src/security/cryptography.js"></script>
+  <script src="/osf project/kiosk program/src/login page/login-app.js"></script>
+
+
+  
+  
+</head>
+<body id="OSF Icon">
+  <div id="app-body">
+    <form id = "form-secure" onsubmit="return validateLogin();" action="../../../kiosk server/php scripts/login_validator.php"  target="window" method="POST">
+
+      <fieldset>
+      <legend>Login</legend><br>
+      <img src="../res/images/OSF.png" alt="OSF Icon"><br>
+      <label for="fname">Email for Log in:</label><br>
+      <input type="text" id="femail" name="femail" class="hilightable"><br>
+      <label for="fpwd">Password:</label><br>
+
+      <input type="password"  id="fpwd" name="fpwd" class="hilightable">
+      <input  type="hidden" id="fauthcode" name="fauthcode">
+      <p>
+      <button class="button">Log In</button>
+      <button type="reset" id="reset" name="button">Clear</button>
+      </p>
+    </form>
+      
+      </fieldset>
+</div>
+<footer style="position: absolute; bottom: 0">
+  <hr>
+  <small>Nick Luedtke, Greg Schwab, Humza Moin, Jake Botka  Copyright &copy; 2020 - IT 391</small>
+  <small>
+    <script>
+      document.write("Last Modified: "+ document.lastModified);
+    </script>
+  </small>
+</footer>
+</body>
+</html>

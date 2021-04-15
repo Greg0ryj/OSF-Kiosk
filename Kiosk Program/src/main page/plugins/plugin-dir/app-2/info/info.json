@@ -1,0 +1,32 @@
+{
+    "Name": "All App",
+    "Version": "000.000.000",
+    "MainURL": "kiosk program/src/main page/plugins/plugin-dir/app-2/index.html",
+    "AdditionalParams" : {
+        "Size" : "1",
+        "CatagoryTypes" : {
+            "Size": "6",
+            "CatagoryTypeKeys": ["Main", "Food", "Medical", "Clothes", "Shelter", "Help"],
+            "Main": {
+                "Priority": 1
+            },
+            "Food": {
+                "Priority": 0
+            },
+            "Medical": {
+                "Priority": 5
+            },
+            "Clothes": {
+                "Priority": 2
+            },
+            "Shelter": {
+                "Priority": 2
+            },
+            "Help": {
+                "Priority": 3
+            }
+        }
+
+    },
+    "PictureURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKZi5lc7wh8EFFjAPpTyqzDL_17yD4m-vsGg&usqp=CAU"
+}

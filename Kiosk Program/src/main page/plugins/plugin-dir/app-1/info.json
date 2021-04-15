@@ -1,0 +1,19 @@
+{
+    "Name": "OSF Mycharts",
+    "Version": "000.000.000",
+    "MainURL": "https://www.osfmychart.org/osfmychart/Authentication/Login?",
+    "AdditionalParams" : {
+        "CatagoryTypes" : {
+            "Size": "2",
+            "CatagoryTypeKeys": ["Main","Medical"],
+            "Main": {
+                "Priority": 0
+            },
+            "Medical": {
+                "Priority": 1
+            }
+            
+        }
+    },
+    "PictureURL": "https://pic.accessify.com/thumbnails/777x423/o/osfmyhealth.org.png"
+}
